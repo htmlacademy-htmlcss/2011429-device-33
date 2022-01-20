@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Елена Токарева](https://up.htmlacademy.ru/htmlcss/33/user/2011429).
-* Наставник: `Владислав Ермолаев`(https://htmlacademy.ru/profile/id128353).
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
 
 ---
 
