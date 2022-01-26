@@ -6,43 +6,47 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html">
+      <a href="">
         <img src="" alt="Логотип">
       </a>
       <nav class="navigation">
-        <ul class="navigation-user">
-          <li class="navigation-user_item">
-            <a href="#" class="navigation-user_link">Найти</a>
+        <ul class="navigation-user-list">
+          <li class="navigation-user-item">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <label><input type="text" name="search" value="Текст поиска">
+              <a class="navigation-user-link" href="#">Найти</a>
+              </label>
+            </form>
           </li>
           <li class="navigation-user_item">
-            <a href="#" class="navigation-user_link">Войти</a>
+            <a class="navigation-user-link" href="#">Войти</a>
           </li>
           <li class="navigation-user_item">
-            <a href="#" class="navigation-user_link">Сравнить</a>
+            <a class="navigation-user-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-user_item">
-            <a href="#" class="navigation-user_link">Корзина</a>
+            <a class="navigation-user-link" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link navigation-link current">Каталог товаров</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a href="#delivery" class="navigation-link">Доставка</a>
+            <a class="navigation-link" href="#delivery">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a href="#guarantee" class="navigation-link">Гарантия</a>
+            <a class="navigation-link" href="#guarantee">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a href="#contacts" class="navigation-link">Контакты</a>
+            <a class="navigation-link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-inner">
-      <section class="catalog-inner">
-        <h1 class="inner-header">Моноподы для селфи</h1>
+      <header class="header-inner">
+        <h1 class="header-inner-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -51,16 +55,18 @@
             <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" >Моноподы для селфи</a>
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
+      </header>
+      <section class="catalog-inner">
         <form class="catalog-inner-filter" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="catalog-inner-filter-title">фильтр:</h2>
           <fieldset class="catalog-inner-filter-group">
-            <legend class="catalog-inner-filter-title">Стоимость</legend>
+            <legend class="catalog-inner-filter-subtitle">Стоимость</legend>
           </fieldset>
           <fieldset class="catalog-inner-filter-group">
-            <legend class="catalog-inner-filter-title">Цвет</legend>
+            <legend class="catalog-inner-filter-subtitle">Цвет</legend>
             <label class="catalog-inner-filter-choiсe">
               <input class=catalog-inner-input" type="checkbox" name="black" checked>
           Черный
@@ -83,7 +89,7 @@
             </label>
           </fieldset>
           <fieldset class="catalog-inner-filter-group">
-            <legend class="catalog-inner-filter-title">Bluetooth</legend>
+            <legend class="catalog-inner-filter-subtitle">Bluetooth</legend>
             <label class="catalog-inner-filter-choiсe">
               <input class=catalog-inner-input"  type="radio" name="yes" checked>
             Есть
@@ -93,7 +99,7 @@
             Нет
             </label>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button main-link" type="submit">Показать</button>
         </form>
         <form class="catalog-inner-sorting" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="catalog-inner-sorting-title">сортировка:</h2>
@@ -105,7 +111,7 @@
           <li class="catalog-inner-card">
             <a class="catalog-inner-card-img" href="#">
               <img src="" alt="Любительская селфи-палка">
-              <h3 class="catalog-inner-card-title">Любительская
+              <h3 class="catalog-inner-card-subtitle">Любительская
                 селфи-палка</h3>
               <span class="catalog-inner-card-price">500 ₽</span>
             </a>
@@ -113,7 +119,7 @@
           <li class="catalog-inner-card">
             <a class="catalog-inner-card-img" href="#" >
               <img src="" alt="Профессиональная селфи-палка ">
-              <h3 class="catalog-inner-card-title">Профессиональная селфи-палка </h3>
+              <h3 class="catalog-inner-card-subtitle">Профессиональная селфи-палка </h3>
               <span class="catalog-inner-card-price">1 500 ₽</span>
             </a>
           </li>
@@ -121,7 +127,7 @@
             <a class="catalog-inner-card-img" href="#">
               <img src="" alt="Непотопляемая
               селфи-палка">
-              <h3 class="catalog-inner-card-title">Непотопляемая
+              <h3 class="catalog-inner-card-subtitle">Непотопляемая
                 селфи-палка</h3>
               <span class="catalog-inner-card-price">2 500 ₽</span>
             </a>
@@ -129,7 +135,7 @@
           <li class="catalog-inner-card">
             <a class="catalog-inner-card-img" href="#">
               <img src="" alt="Селфи-палка">
-              <h3 class="catalog-inner-card-title">Селфи-палка «Следуй за мной»</h3>
+              <h3 class="catalog-inner-card-subtitle">Селфи-палка «Следуй за мной»</h3>
               <span class="catalog-inner-card-price">1 500 ₽</span>
             </a>
           </li>
@@ -141,29 +147,28 @@
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-current" href="#">1
+            <a class="pagination-link pagination-current" href="#">1
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev" href="#">2
+            <a class="pagination-link " href="#">2
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev" href="#">3
+            <a class="pagination-link" href="#">3
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev" href="#">...
+            <a class="pagination-link" href="#">...
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev" href="#">15
+            <a class="pagination-link" href="#">15
             </a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">Вперед
             </a>
-
           </li>
         </ul>
       </section>
@@ -205,7 +210,7 @@
           </li>
         </ul>
         <a href="https://htmlacademy.ru">
-          <img src="" alt="Логотип Html-Academy ">
+          <img src="" alt="Сделано в Html-Academy ">
         </a>
       </footer>
     </main>
