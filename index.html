@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <h1 class="visually-hidden">Интернет-магазин электроники Девайс</h1>
@@ -17,7 +18,7 @@
           <div class="menu-user">
             <ul class="menu-user-list">
               <li class="menu-user-item">
-                <form action="https://echo.htmlacademy.ru/" method="post">
+                <form class="menu-user-form" action="https://echo.htmlacademy.ru/" method="post">
                   <label><input type="text" name="search" value="Текст поиска">
                   <a class="menu-user-link" href="#">Найти</a>
                   </label>
@@ -25,6 +26,7 @@
               </li>
               <li class="menu-user-item">
                 <a class="menu-user-link" href="#">Войти</a>
+                <a class="menu-user-link visually-hidden" href="#">Выйти</a>
               </li>
             </ul>
           </div>
@@ -86,8 +88,8 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="advertising">
+      <section class="advertising">
+        <div class="container">
           <h2 class="visually-hidden">Рекламный слайдер</h2>
           <div class="slider-item slider-item-current">
             <h3 class="visually-hidden">Квадрокоптер</h3>
@@ -101,17 +103,12 @@
               </button>
             </div>
             <div class="slider-wrapper">
+              <div class="slider-number">01</div>
               <div class="slider-subtitle">Порхает как бабочка,
                 жалит как пчела!</div>
               <div class="slider-descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </div>
               <a class="main-link" href="catalog.html">Подробнее</a>
-              <dl class="slider-specifications">
-                <dd>800 м</dd>
-                <dt>Дальность полета</dt>
-                <dd>50 м</dd>
-                <dt>Радиус поражения</dt>
-              </dl>
               <ol class="slider-pagination">
                 <li class="slider-pagination-item">
                   <button class="slider-pagination-button slider-pagination-button-current">
@@ -129,6 +126,12 @@
                   </button>
                 </li>
               </ol>
+              <dl class="slider-specifications">
+                <dd>800 м</dd>
+                <dt>Дальность полета</dt>
+                <dd>50 м</dd>
+                <dt>Радиус поражения</dt>
+              </dl>
             </div>
           </div>
           <div class="slider-item">
@@ -143,14 +146,11 @@
               </button>
             </div>
             <div class="slider-wrapper">
+              <div class="slider-number">02</div>
               <div class="slider-subtitle">Худеем правильно!</div>
               <div class="slider-descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </div>
-              <a class="main_link" href="catalog.html">Подробнее</a>
-              <dl class="slider-specifications">
-                <dd>48 часов</dd>
-                <dt>Без подзарядки</dt>
-              </dl>
+              <a class="main-link" href="catalog.html">Подробнее</a>
               <ol class="slider-pagination">
                 <li class="slider-pagination-item">
                   <button class="slider-pagination-button slider-pagination-button-current">
@@ -168,6 +168,10 @@
                   </button>
                 </li>
               </ol>
+              <dl class="slider-specifications">
+                <dd>48 часов</dd>
+                <dt>Без подзарядки</dt>
+              </dl>
             </div>
           </div>
           <div class="slider-item">
@@ -182,19 +186,12 @@
               </button>
             </div>
             <div class="slider-wrapper">
+              <div class="slider-number">03</div>
               <div class="slider-subtitle">Делай селфи,
                 как Бен Стиллер! </div>
               <div class="slider-descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </div>
               <a class="main-link" href="catalog.html">Подробнее</a>
-              <dl class="slider-specifications">
-                <dd>8,5 м</dd>
-                <dt>Длина палки</dt>
-                <dd>5 кг</dd>
-                <dt>Вес палки</dt>
-                <dd>Карбон</dd>
-                <dt>Материал</dt>
-              </dl>
               <ol class="slider-pagination">
                 <li class="slider-pagination-item">
                   <button class="slider-pagination-button slider-pagination-button-current">
@@ -212,51 +209,65 @@
                   </button>
                 </li>
               </ol>
+              <dl class="slider-specifications">
+                <dd>8,5 м</dd>
+                <dt>Длина палки</dt>
+                <dd>5 кг</dd>
+                <dt>Вес палки</dt>
+                <dd>Карбон</dd>
+                <dt>Материал</dt>
+              </dl>
             </div>
           </div>
-        </section>
-      </div>
-      <div class="container">
-        <section class="catalog">
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
               <a class="catalog-link" href="catalog.html">
+                <div class="catalog-item-img"></div>
                 <h3 class="catalog-item-subtitle">Виртуальная
                   реальность</h3>
               </a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link" href="catalog.html">
+                <div class="catalog-item-img"></div>
                 <h3 class="catalog-item-subtitle">Моноподы
                 для селфи</h3>
               </a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link" href="catalog.html">
+                <div class="catalog-item-img"></div>
                 <h3 class="catalog-item-subtitle">Экшн-камеры</h3>
               </a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link" href="catalog.html">
+                <div class="catalog-item-img"></div>
                 <h3 class="catalog-item-subtitle">Фитнес-браслеты</h3>
               </a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link" href="catalog.html">
+                <div class="catalog-item-img"></div>
                 <h3 class="catalog-item-subtitle">Умные часы</h3>
               </a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link" href="catalog.html">
+                <div class="catalog-item-img"></div>
                 <h3 class="catalog-item-subtitle">Квадрокоптеры</h3>
               </a>
             </li>
           </ul>
-        </section>
-      </div>
-      <div class="container">
-        <section class="service">
+        </div>
+      </section>
+      <section class="service">
+        <div class="container">
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="service-list">
             <li class="service-item"><a class="main-link main-link-current" href="#delivery">Доставка</a></li>
@@ -283,42 +294,44 @@
             <h3 class="visually-hidden">Доставка под заказ</h3>
             <button class="order-button">Доставим редкий товар под заказ</button>
           </div>
-        </section>
-      </div>
-      <div class="container">
-        <section class="about">
-          <h2 class="about-title">О нас</h2>
-          <div class="about-descr">
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-            <ul class="transport-list">
-              <li class="transport-item"><b>Меловые линии</b></li>
-              <li class="transport-item"><b>СДИК</b></li>
-              <li class="transport-item"><b>ТоксБерри</b></li>
+        </div>
+      </section>
+      <index-column>
+        <div class="container">
+          <section class="about">
+            <h2 class="title">О нас</h2>
+            <div class="about-descr">
+              <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+              <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+              <ul class="transport-list">
+                <li class="transport-item"><b>Меловые линии</b></li>
+                <li class="transport-item"><b>СДИК</b></li>
+                <li class="transport-item"><b>ТоксБерри</b></li>
+              </ul>
+              <a  class="main-link"href="#">Подробнее о нас</a>
+            </div>
+          </section>
+          <section class="contacts">
+            <h2 class="title">Контакты</h2>
+            <div class="contacts-descr">Вы можете забрать товар сами, заехав в наш офис.
+              Заодно сможете проверить работоспособность покупки. </div>
+            <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+            <address>
+              <p class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+            </address>
+            <h3 class="contacts-subtitle">Время работы</h3>
+            <ul class="contacts-schedule-list">
+              <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+              <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a  class="main-link"href="#">Подробнее о нас</a>
-          </div>
-        </section>
-        <section class="contacts">
-          <h2 class="contacts-title">Контакты</h2>
-          <div class="contacts-descr">Вы можете забрать товар сами, заехав в наш офис.
-            Заодно сможете проверить работоспособность покупки. </div>
-          <h3 class="contacts_subtitle">Интернет-магазин «Девайс»</h3>
-          <address>
-            <p class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-          </address>
-          <h3 class="contacts_subtitle">Время работы</h3>
-          <ul class="contacts-schedule-list">
-            <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-            <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-          </ul>
-          <button class="main-link">Напишите нам</button>
-        </section>
-      </div>
-      <div class="container">
-        <section class="mailing">
-          <h2 class="mailing-title">Подпишитесь
+            <button class="main-link">Напишите нам</button>
+          </section>
+        </div>
+      </index-column>
+      <section class="mailing">
+        <div class="container">
+          <h2 class="title">Подпишитесь
             на рассылку</h2>
           <div class="mailing-descr">Еженедельный дайджест с обзорами новинок,
               длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</div>
@@ -327,8 +340,8 @@
             <button class="button" type="submit">Подписаться</button>
           </form>
           <p>Это бесплатно</p>
-        </section>
-      </div>
+        </div>
+      </section>
       <footer>
         <div class="container">
           <div class="footer-top">
@@ -338,7 +351,7 @@
           </div>
           <div class="footer-middle">
             <div class="address">
-              <p class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </div>
             <div class="menu footer-menu">
               <ul class="footer-menu-list">
@@ -348,7 +361,7 @@
               </ul>
             </div>
             <div class="address">
-              <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+              <a class="footer-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
             </div>
           </div>
           <div class="footer-bottom">
