@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -21,18 +20,24 @@
               <li class="menu-user-item">
                 <form class="menu-user-form" action="https://echo.htmlacademy.ru/" method="post">
                   <label><input type="text" name="search" value="Текст поиска">
-                  <a class="menu-user-link" href="#">Найти</a>
                   </label>
+                  <button class="button-search">
+                    <a class="menu-user-link" href="#">Найти</a>
+                  </button>
                 </form>
               </li>
               <li class="menu-user-item">
-                <a class="menu-user-link" href="#">Войти</a>
-                <a class="menu-user-link visually-hidden" href="#">Выйти</a>
+                <button class="button-log">
+                  <a class="menu-user-link" href="#">Войти</a>
+                </button>
+                <button class="button-log">
+                  <a class="menu-user-link visually-hidden" href="#">Выйти</a>
+                </button>
               </li>
             </ul>
           </div>
           <div class="menu-user">
-            <ul class="menu-user-list">
+            <ul class="menu-user-list menu-user-list-action">
               <li class="menu-user-item">
                 <a class="menu-user-link" href="#">Сравнить</a>
               </li>
@@ -236,37 +241,35 @@
           <div class="address">
             <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </div>
-          <div class="menu footer-menu">
-            <ul class="footer-menu-list">
+          <ul class="footer-menu-list">
               <li><a class="service-item footer-menu-item" href="#delivery">Доставка</a></li>
               <li><a class="service-item footer-menu-item" href="#delivery">Гарантия</a></li>
               <li><a class="service-item footer-menu-item" href="#delivery">Кредит</a></li>
-            </ul>
-          </div>
+          </ul>
           <div class="address">
             <a class="footer-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="social">
-            <ul class="social-list">
-              <li class="social-item">
-                <a class="social-link" href="https://wwww.facebook.com/htmlacademy">
-                  <span class="visually-hidden">Facebook</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="https://wwww.instagram.com/htmlacademy/">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="https://wwww.twitter.com/htmlacademy_ru">
-                  <span class="visually-hidden">Twitter</span>
-                </a>
-              </li>
-            </ul>
+          <div class="footer-line">
           </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="https://wwww.facebook.com/htmlacademy">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://wwww.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://wwww.twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
           <div class="made-in">
             <a href="https://htmlacademy.ru">
               <img src="images/logo/logo-htmlacademy.svg" width="115" height="33" alt="Сделано в Html-Academy ">
