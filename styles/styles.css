@@ -54,15 +54,15 @@ body {
   color: #000000;
 }
 
-.main-container {
+main {
   flex-grow: 1;
 }
 
-header {
+.main-header {
   margin-top: 40px;
 }
 
-header .container {
+.main-header .container {
   background-color: #FFE17F;
 }
 
@@ -479,7 +479,7 @@ header .container {
   height: 57px;
 }
 
-footer {
+.main-footer {
   background-color: #444444;
   color: #ffffff;
 }
@@ -634,6 +634,8 @@ button.main-link {
 }
 
 .catalog-inner-wrapper {
+  box-sizing: border-box;
+  width: 840px;
   padding: 70px 40px 78px 40px;
   background-color: #ffffff;
   color: #000000;
