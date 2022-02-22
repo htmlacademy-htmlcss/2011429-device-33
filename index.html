@@ -15,32 +15,20 @@
           </a>
         </div>
         <div class="header-middle">
-          <div class="menu-user">
-            <ul class="menu-user-list">
-              <li class="menu-user-item">
-                <form class="menu-user-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label><input type="text" name="search" value="Текст поиска">
-                  </label>
-                  <button class="button-search">
-                    <a class="menu-user-link" href="#">Найти</a>
-                  </button>
-                </form>
-              </li>
-              <li class="menu-user-item">
-                <button class="button-log">
-                  <a class="menu-user-link" href="#">Войти</a>
-                </button>
-                <button class="button-log">
-                  <a class="menu-user-link" href="#">Выйти</a>
-                </button>
-                <button class="button-log">
-                  <a class="menu-user-link" href="#">Имя пользователя</a>
-                </button>
-              </li>
-            </ul>
+          <div class="menu-search-log">
+            <form class="menu-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label><input type="text" name="search" value="Текст поиска">
+              </label>
+              <button class="button-search">Найти</button>
+            </form>
+            <div class="account">
+              <button class="button-login">Войти</button>
+              <a class="account-name-link" href="#">Коля Петухов</a>
+              <button class="button-logout">Выйти</button>
+            </div>
           </div>
           <div class="menu-user">
-            <ul class="menu-user-list menu-user-list-action">
+            <ul class="menu-user-list">
               <li class="menu-user-item">
                 <a class="menu-user-link" href="#">Сравнить</a>
               </li>
@@ -324,17 +312,15 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="order">
         <div class="container">
-          <div class="order">
-            <h3 class="visually-hidden">Доставка под заказ</h3>
-            <button class="order-button">Доставим редкий товар под заказ</button>
-          </div>
+          <h3 class="visually-hidden">Доставка под заказ</h3>
+          <button class="order-button">Доставим редкий товар под заказ</button>
         </div>
       </section>
-      <div class="index-column">
+      <section class="index-column">
         <div class="container">
-          <section class="about">
+          <div class="about">
             <h2 class="title">О нас</h2>
             <div class="about-descr">
               <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -346,8 +332,8 @@
               </ul>
               <a  class="main-link"href="#">Подробнее о нас</a>
             </div>
-          </section>
-          <section class="contacts">
+          </div>
+          <div class="contacts">
             <h2 class="title">Контакты</h2>
             <div class="contacts-descr">Вы можете забрать товар сами, заехав в наш офис.
               <br>Заодно сможете проверить работоспособность покупки. </div>
@@ -362,9 +348,9 @@
               <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
             <button class="main-link">Напишите нам</button>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
       <section class="mailing">
         <div class="container">
           <div class="mailing-wrapper">
@@ -403,8 +389,6 @@
             </div>
           </div>
           <div class="footer-bottom">
-            <div class="footer-line">
-            </div>
             <ul class="social-list">
               <li class="social-item">
                 <a class="social-link" href="https://wwww.facebook.com/htmlacademy">

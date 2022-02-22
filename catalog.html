@@ -15,26 +15,17 @@
           </a>
         </div>
         <div class="header-middle">
-          <div class="menu-user">
-            <ul class="menu-user-list">
-              <li class="menu-user-item">
-                <form class="menu-user-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label><input type="text" name="search" value="Текст поиска">
-                  </label>
-                  <button class="button-search">
-                    <a class="menu-user-link" href="#">Найти</a>
-                  </button>
-                </form>
-              </li>
-              <li class="menu-user-item">
-                <button class="button-log">
-                  <a class="menu-user-link" href="#">Войти</a>
-                </button>
-                <button class="button-log">
-                  <a class="menu-user-link visually-hidden" href="#">Выйти</a>
-                </button>
-              </li>
-            </ul>
+          <div class="menu-search-log">
+            <form class="menu-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label><input type="text" name="search" value="Текст поиска">
+              </label>
+              <button class="button-search">Найти</button>
+            </form>
+            <div class="account logged">
+              <button class="button-login">Войти</button>
+              <a class="account-name-link" href="#">Коля Петухов</a>
+              <button class="button-logout">Выйти</button>
+            </div>
           </div>
           <div class="menu-user">
             <ul class="menu-user-list menu-user-list-action">
@@ -268,8 +259,6 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="footer-line">
-          </div>
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link" href="https://wwww.facebook.com/htmlacademy">
