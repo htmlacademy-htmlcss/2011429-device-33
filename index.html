@@ -11,7 +11,7 @@
       <div class="container">
         <div class="header-top">
           <a href="">
-            <img src="images/logo/logo.svg" width="145" height="36" alt="Логотип">
+            <img class="header-img" src="images/logo/logo.svg" width="145" height="36" alt="Логотип">
           </a>
         </div>
         <div class="header-middle">
@@ -40,11 +40,13 @@
         </div>
         <div class="header-bottom">
           <div class="menu">
-            <a class="menu-link" href="catalog.html">Каталог товаров</a>
-            <button class="button-dropdown">
+            <div class="menu-nav">
+              <a class="menu-link" href="catalog.html">Каталог товаров</a>
+              <button class="button-dropdown">
               <span class="visually-hidden">Раскрывающийся список товаров</span>
-            </button>
-            <nav class="navigation">
+              </button>
+            </div>
+            <nav class="navigation navigation-active">
               <h2 class="visually-hidden">Каталог товаров</h2>
               <ul class="navigation-list">
                 <li class="navigation-item">
@@ -56,12 +58,16 @@
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">Экшн-камеры</a>
                 </li>
+              </ul>
+              <ul class="navigation-list">
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">Фитнес-браслеты</a>
                 </li>
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">Умные часы</a>
                 </li>
+              </ul>
+              <ul class="navigation-list">
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">Квадрокоптеры</a>
                 </li>
@@ -106,7 +112,7 @@
               <div class="slider-descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </div>
               <div class="slider-line">
-                <a class="main-link" href="catalog.html">Подробнее</a>
+              <a class="slider-link" href="catalog.html">Подробнее</a>
               <ol class="slider-pagination">
                 <li class="slider-pagination-item">
                   <button class="slider-pagination-button slider-pagination-button-current">
@@ -137,7 +143,7 @@
               </ul>
             </div>
           </div>
-          <div class="slider-item">
+          <div class="slider-item ">
             <div class="slider-gallery">
               <button class="slider-button slider-prev">
                 <span class="visually-hidden">Предыдущая страница</span>
@@ -150,11 +156,11 @@
             <div class="slider-wrapper">
               <h3 class="visually-hidden">Фитнес-браслет</h3>
               <div class="slider-number">02</div>
-              <div class="slider-subtitle">Худеем правильно!</div>
+              <div class="slider-subtitle">Худеем <br>правильно!</div>
               <div class="slider-descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </div>
               <div class="slider-line">
-                <a class="main-link" href="catalog.html">Подробнее</a>
+                <a class="slider-link" href="catalog.html">Подробнее</a>
               <ol class="slider-pagination">
                 <li class="slider-pagination-item">
                   <button class="slider-pagination-button slider-pagination-button-current">
@@ -181,7 +187,7 @@
               </ul>
             </div>
           </div>
-          <div class="slider-item">
+          <div class="slider-item ">
             <div class="slider-gallery">
               <button class="slider-button slider-prev">
                 <span class="visually-hidden">Предыдущая страница</span>
@@ -199,7 +205,7 @@
               <div class="slider-descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </div>
               <div class="slider-line">
-                <a class="main-link" href="catalog.html">Подробнее</a>
+                <a class="slider-link" href="catalog.html">Подробнее</a>
               <ol class="slider-pagination">
                 <li class="slider-pagination-item">
                   <button class="slider-pagination-button slider-pagination-button-current">
@@ -251,7 +257,7 @@
             <li class="catalog-item">
               <a class="catalog-link" href="catalog.html">
                 <div class="catalog-item-img"></div>
-                <h3 class="catalog-item-subtitle">Моноподы
+                <h3 class="catalog-item-subtitle">Моноподы<br>
                 для селфи</h3>
               </a>
             </li>
@@ -287,9 +293,9 @@
           <h2 class="visually-hidden">Услуги</h2>
           <div class="service-column">
             <ul class="service-list">
-              <li class="service-item"><a class="main-link main-link-current" href="#delivery">Доставка</a></li>
-              <li class="service-item"><a class="main-link" href="#guarantee">Гарантия</a></li>
-              <li class="service-item"><a class="main-link" href="#credit">Кредит</a></li>
+              <li class="service-item"><button class="button-service button-service-current">Доставка</button></li>
+              <li class="service-item"><button class="button-service">Гарантия</button></li>
+              <li class="service-item"><button class="button-service">Кредит</button></li>
             </ul>
             <div class="service-wrapper">
               <div class="service-item-wrapper service-item-wrapper-current">
@@ -318,10 +324,10 @@
           <button class="order-button">Доставим редкий товар под заказ</button>
         </div>
       </section>
-      <section class="index-column">
+      <section class="information">
         <div class="container">
           <div class="about">
-            <h2 class="title">О нас</h2>
+            <h2 class="about-title">О нас</h2>
             <div class="about-descr">
               <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
               <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -330,11 +336,11 @@
                 <li class="transport-item"><b>СДИК</b></li>
                 <li class="transport-item"><b>ТоксБерри</b></li>
               </ul>
-              <a  class="main-link"href="#">Подробнее о нас</a>
+              <a  class="about-link" href="#">Подробнее о нас</a>
             </div>
           </div>
           <div class="contacts">
-            <h2 class="title">Контакты</h2>
+            <h2 class="contacts-title">Контакты</h2>
             <div class="contacts-descr">Вы можете забрать товар сами, заехав в наш офис.
               <br>Заодно сможете проверить работоспособность покупки. </div>
             <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -347,7 +353,7 @@
               <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <button class="main-link">Напишите нам</button>
+            <button class="button-contacts">Напишите нам</button>
           </div>
         </div>
       </section>
@@ -359,10 +365,10 @@
             <div class="mailing-descr">Еженедельный дайджест с обзорами новинок,
                 длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</div>
           </div>
-          <div class="mailing-wrapper">
+          <div class="mailing-form">
             <form class="form-email" action="https://echo.htmlacademy.ru/" method="post">
               <input type="email" name="email" value="Ваш e-mail">
-              <button class="button" type="submit">Подписаться</button>
+              <button class="button-mail" type="submit">Подписаться</button>
             </form>
             <p>Это бесплатно</p>
           </div>
