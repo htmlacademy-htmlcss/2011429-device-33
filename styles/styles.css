@@ -183,6 +183,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 240px;
@@ -243,15 +244,17 @@ main {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   list-style: none;
+  flex-wrap: wrap;
+  width: 470px;
 }
 
 .menu-item {
   margin-right: 45px;
 }
 
-.menu-item:last-child {
+.menu-item:nth-child(3n), .menu-item:last-child {
   margin-right: 0;
 }
 
@@ -289,6 +292,7 @@ main {
 
 .navigation-active {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation {
@@ -478,6 +482,7 @@ main {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-item {
@@ -821,6 +826,7 @@ main {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 444px;
   list-style: none;
 }
