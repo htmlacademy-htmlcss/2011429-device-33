@@ -8,34 +8,25 @@
 </head>
   <body>
     <h1 class="visually-hidden">Интернет-магазин электроники Девайс</h1>
-    <header class="main-header">
+    <header class="main-header inner-header">
       <div class="container">
         <div class="header-top">
           <a href="">
-            <img src="images/logo/logo.svg" width="145" height="36" alt="Логотип">
+            <img class="header-img" src="images/logo/logo.svg" width="145" height="36" alt="Логотип">
           </a>
         </div>
         <div class="header-middle">
-          <div class="menu-user">
-            <ul class="menu-user-list">
-              <li class="menu-user-item">
-                <form class="menu-user-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label><input type="text" name="search" value="Текст поиска">
-                  </label>
-                  <button class="button-search">
-                    <a class="menu-user-link" href="#">Найти</a>
-                  </button>
-                </form>
-              </li>
-              <li class="menu-user-item">
-                <button class="button-log">
-                  <a class="menu-user-link" href="#">Войти</a>
-                </button>
-                <button class="button-log">
-                  <a class="menu-user-link visually-hidden" href="#">Выйти</a>
-                </button>
-              </li>
-            </ul>
+          <div class="menu-search-log">
+            <form class="menu-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label><input type="text" name="search" value="Текст поиска">
+              </label>
+              <button class="button-search">Найти</button>
+            </form>
+            <div class="account logged">
+              <button class="button-login">Войти</button>
+              <a class="account-name-link" href="#">Коля Петухов</a>
+              <button class="button-logout">Выйти</button>
+            </div>
           </div>
           <div class="menu-user">
             <ul class="menu-user-list menu-user-list-action">
@@ -48,13 +39,15 @@
             </ul>
           </div>
         </div>
-        <div class="header-bottom">
+        <div class="header-bottom header-bottom-inner">
           <div class="menu">
-            <a class="menu-link" href="catalog.html">Каталог товаров</a>
-            <button class="button-dropdown">
+            <div class="menu-nav">
+              <a class="menu-link" href="catalog.html">Каталог товаров</a>
+              <button class="button-dropdown">
               <span class="visually-hidden">Раскрывающийся список товаров</span>
-            </button>
-            <nav class="navigation">
+              </button>
+            </div>
+            <nav class="navigation navigation-active">
               <h2 class="visually-hidden">Каталог товаров</h2>
               <ul class="navigation-list">
                 <li class="navigation-item">
@@ -66,12 +59,16 @@
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">Экшн-камеры</a>
                 </li>
+              </ul>
+              <ul class="navigation-list">
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">Фитнес-браслеты</a>
                 </li>
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">Умные часы</a>
                 </li>
+              </ul>
+              <ul class="navigation-list">
                 <li class="navigation-item">
                   <a class="navigation-link" href="#">Квадрокоптеры</a>
                 </li>
@@ -154,7 +151,7 @@
               Нет
               </label>
             </fieldset>
-            <button class="button main-link" type="submit">Показать</button>
+            <button class="button button-filter" type="submit">Показать</button>
           </form>
           <div class="catalog-inner-column">
             <form class="catalog-inner-sorting" action="https://echo.htmlacademy.ru/" method="get">
@@ -269,8 +266,6 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="footer-line">
-          </div>
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link" href="https://wwww.facebook.com/htmlacademy">
