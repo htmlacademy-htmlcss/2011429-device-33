@@ -322,6 +322,26 @@
         <div class="container">
           <h3 class="visually-hidden">Доставка под заказ</h3>
           <button class="order-button">Доставим редкий товар под заказ</button>
+          <form class="order-form order-form-active" action="https://echo.htmlacademy.ru/" method="POST" >
+            <h3 class="order-form-title">Доставка под заказ</h3>
+            <p class="order-form-name">
+              <label for="form-name">Ваше имя:</label>
+              <input id="form-name" type="text" value="Введите имя">
+            </p>
+            <p class="order-form-mail">
+              <label for="form-mail">Ваш e-mail:</label>
+              <input id="form-mail" type="email" value="почта">
+            </p>
+            <p class="order-form-text">
+              <label for="form-text">Что нужно привезти:</label>
+              <input id="form-text" type="text" value="В свободной форме">
+            </p>
+            <p class="order-form-number">
+              <label for="form-number">Количество:</label>
+              <input id="form-number" type="number" value="1">
+            </p>
+            <button class="order-form-button" type="submit">Отправить</button>
+          </form>
         </div>
       </section>
       <section class="information">
