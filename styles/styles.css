@@ -1141,17 +1141,15 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.catalog-inner-card {
-  width: 360px;
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 40px 44px;
   margin-bottom: 44px;
 }
 
 .catalog-inner-card-link img {
+  width: 100%;
+  object-fit: contain;
   margin-bottom: 32px;
 }
 
