@@ -103,6 +103,7 @@ main {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .menu-form {
@@ -111,8 +112,8 @@ main {
   margin-right: 26px;
   font-size: 16px;
   line-height: 20px;
-  width: 517px;
-  height: 40px;
+  min-width: 517px;
+  min-height: 40px;
   text-align: center;
   border: 1px solid black;
   font-family: "Rubik", sans-serif;
@@ -127,10 +128,9 @@ main {
   margin: 0;
   padding: 0;
   padding-left: 48px;
+  border: 0;
   background-color: #FFE17F;
   color: #000000;
-  border: 0;
-  border-right: 1px solid black;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -143,11 +143,13 @@ main {
   background-color: #FFE17F;
   color: #000000;
   width: 160px;
-  height: 40px;
+  min-height: 40px;
   border: 0;
+  border-left: 1px solid black;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .menu-form {
@@ -164,6 +166,10 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
+}
+.account button:not(:last-child) {
+  margin-right: 26px;
 }
 
 .account a, .account .button-logout {
@@ -178,31 +184,6 @@ main {
   display: none;
 }
 
-.menu-user-list {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  width: 240px;
-}
-
-.menu-user-link {
-  display: block;
-  color: #000000;
-  text-decoration: none;
-}
-
-.menu-user-item {
-  margin-right: 26px;
-}
-
-.menu-user-item:last-child {
-  margin-right: 0;
-}
-
 .button-login, .button-logout {
   margin: 0;
   padding: 0;
@@ -210,10 +191,11 @@ main {
   background-color: #FFE17F;
   color: #000000;
   width: 56px;
-  height: 30px;
+  min-height: 30px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
 }
 
 .button-logout {
@@ -225,8 +207,39 @@ main {
   width: 120px;
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
   margin-right: 26px;
 }
+
+.menu-user {
+  width: 240px;
+}
+
+.menu-user-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-user-link {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-user-item {
+  margin-right: 26px;
+}
+
+.menu-user-item:nth-child(2n) {
+  margin-right: 0;
+}
+
 
 .header-bottom {
   padding: 0 60px;
@@ -268,6 +281,7 @@ main {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .menu-nav {
@@ -283,11 +297,12 @@ main {
 .button-dropdown {
   margin: 0;
   padding: 0;
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .navigation-active {
@@ -321,6 +336,7 @@ main {
   line-height: 18px;
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .advertising {
@@ -351,6 +367,7 @@ main {
   width: 20px;
   height: 60px;
   margin-bottom: 49px;
+  cursor: pointer;
 }
 
 .slider-wrapper {
@@ -399,6 +416,7 @@ main {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .slider-pagination {
@@ -420,6 +438,7 @@ main {
   height: 12px;
   border: 2px solid #000000;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider-pagination-button-current {
@@ -428,6 +447,7 @@ main {
   border: 2px solid #000000;
   border-radius: 50%;
   background-color: #000000;
+  cursor: pointer;
 }
 
 .slider-line {
@@ -505,6 +525,7 @@ main {
   display: block;
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .service {
@@ -521,7 +542,7 @@ main {
 .service-list {
   margin: 0;
   padding: 0;
-  padding-bottom: 64px;
+  padding-bottom: 65px;
   list-style: none;
 }
 
@@ -534,6 +555,11 @@ main {
 
 .service-item:last-child {
   margin-bottom: 0;
+}
+
+.service-wrapper {
+  padding-bottom: 72px;
+
 }
 
 .service-item-wrapper {
@@ -566,7 +592,7 @@ main {
   padding: 0;
   padding: 10px 4px;
   border: 0;
-  width: 160px;
+  min-width: 160px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -574,6 +600,7 @@ main {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .order {
@@ -587,9 +614,10 @@ main {
   font-size: 20px;
   line-height: 23px;
   text-transform: uppercase;
-  width: 1160px;
+  min-width: 1160px;
   height: 100px;
   text-align: center;
+  cursor: pointer;
 }
 
 .information {
@@ -653,6 +681,7 @@ main {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .contacts {
@@ -697,7 +726,7 @@ main {
 .button-contacts {
   box-sizing: border-box;
   display: block;
-  width: 260px;
+  min-width: 260px;
   height: 40px;
   margin: 0;
   padding: 0;
@@ -710,6 +739,7 @@ main {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .contacts-schedule-list {
@@ -774,7 +804,7 @@ main {
 
 .button-mail {
   box-sizing: border-box;
-  width: 253px;
+  min-width: 253px;
   height: 57px;
   margin: 0;
   padding: 0;
@@ -783,6 +813,7 @@ main {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .main-footer {
@@ -801,7 +832,6 @@ main {
   align-items: flex-start;
   margin-bottom: 47px;
 }
-
 
 .footer-address {
   margin: 0;
@@ -832,8 +862,17 @@ main {
 }
 
 .footer-menu-item {
+  margin-right: 20px;
+}
+
+.footer-menu-item:nth-child(3n), .footer-menu-item:last-child {
+  margin-right: 0;
+}
+
+.footer-menu-link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  font-weight: 800;
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
@@ -856,8 +895,21 @@ main {
   padding-right: 330px;
   display: flex;
   justify-content: space-between;
-  width: 150px;
+  min-width: 150px;
   list-style: none;
+}
+
+.social-item {
+  margin-right: 20px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .made-in {
@@ -900,6 +952,7 @@ main {
   line-height: 19px;
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .catalog-inner {
@@ -915,6 +968,7 @@ main {
 .catalog-inner-filter {
   width: 320px;
   padding-left: 60px;
+  box-sizing: border-box;
 }
 
 .catalog-inner-filter-group {
@@ -940,7 +994,7 @@ main {
 .button-filter {
   box-sizing: border-box;
   display: block;
-  width: 220px;
+  min-width: 220px;
   height: 40px;
   margin: 0;
   padding: 0;
@@ -953,6 +1007,7 @@ main {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .catalog-inner-filter-subtitle {
@@ -973,6 +1028,7 @@ main {
 .catalog-inner-card-link {
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .catalog-inner-filter-choiсe {
@@ -1010,6 +1066,10 @@ main {
   margin-bottom: 44px;
 }
 
+.catalog-inner-card-link img {
+  margin-bottom: 32px;
+}
+
 .catalog-inner-card-descr {
   display: flex;
   justify-content: space-between;
@@ -1022,6 +1082,8 @@ main {
 }
 
 .download-more {
+  margin: 0 auto;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -1031,6 +1093,7 @@ main {
   width: 760px;
   height: 55px;
   margin-bottom: 44px;
+  cursor: pointer;
 }
 
 .pagination-list {
@@ -1049,6 +1112,7 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .pagination-prev, .pagination-next {
@@ -1056,6 +1120,7 @@ main {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  cursor: pointer;
 }
 
 .pagination-number-list {
