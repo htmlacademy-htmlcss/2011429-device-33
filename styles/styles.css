@@ -116,6 +116,7 @@ main {
   min-height: 40px;
   text-align: center;
   border: 1px solid black;
+  border-radius: 50px/50px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -129,7 +130,7 @@ main {
   padding: 0;
   padding-left: 48px;
   border: 0;
-  background-color: #FFE17F;
+  background-color: transparent;
   color: #000000;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -140,11 +141,11 @@ main {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #FFE17F;
+  background-color: transparent;
   color: #000000;
   width: 160px;
   min-height: 40px;
-  border: 0;
+  border: none;
   border-left: 1px solid black;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -187,7 +188,7 @@ main {
 .button-login, .button-logout {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   background-color: #FFE17F;
   color: #000000;
   font-family: "Rubik", sans-serif;
@@ -589,7 +590,7 @@ main {
   margin: 0;
   padding: 0;
   padding: 10px 4px;
-  border: 0;
+  border: none;
   min-width: 160px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -689,7 +690,7 @@ main {
   height: 40px;
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   background-color: transparent;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -813,7 +814,7 @@ main {
   height: 40px;
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   background-color: transparent;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1085,7 +1086,7 @@ main {
   height: 40px;
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   background-color: transparent;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
