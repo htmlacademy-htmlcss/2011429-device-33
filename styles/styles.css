@@ -350,12 +350,13 @@ main {
   padding-bottom: 22px;
 }
 
-.menu-button span {
+/* .menu-button span {
   margin-right: 15px;
-}
+} */
 
 .menu-button {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -405,6 +406,10 @@ main {
 .menu-button:focus {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.button-dropdown:focus {
+  outline: none;
 }
 
 .menu-button:hover .button-dropdown {
@@ -497,7 +502,12 @@ main {
   margin-right: 20px;
 }
 
+.navigation-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .navigation-link {
+  display: block;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
@@ -523,6 +533,12 @@ main {
   margin-bottom: 70px;
 }
 
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .slider-item {
   display: none;
 }
@@ -541,7 +557,12 @@ main {
 }
 
 .slider-gallery-img {
+  display: block;
   width: 100%;
+}
+
+.slider-gallery a:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .slider-button {
@@ -727,8 +748,15 @@ main {
 }
 
 .slider-specifications-item {
-  padding-right: 20px;
   font-size: 36px;
+}
+
+.slider-specifications-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider-specifications-item-addmargin:not(:last-child) {
+  margin-right: 40px;
 }
 
 .slider-specifications-item p {
@@ -739,10 +767,6 @@ main {
 
 .slider-specifications-item p:last-child {
   margin-bottom: 0;
-}
-
-.slider-specifications-item:last-child {
-  padding-right: 0;
 }
 
 .slider-specifications-item-descr {
@@ -1383,16 +1407,27 @@ main {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  padding: 11px 0 16px 14px;
+  padding: 11px 14px 16px 14px;
   width: 557px;
   height: 57px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  color: #444444;
+  color: #000000;
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #C4C4C4;
+}
+
+.form-email input::placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.form-email input:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  z-index: 1;
 }
 
 .button-mail {
@@ -1407,6 +1442,19 @@ main {
   line-height: 21px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.button-mail:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.button-mail:hover {
+  background-color: #DCDCDC;
+}
+
+.button-mail:active {
+  opacity: 0.3;
 }
 
 .main-footer {
