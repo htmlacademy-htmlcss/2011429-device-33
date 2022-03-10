@@ -1650,6 +1650,30 @@ main {
   cursor: pointer;
 }
 
+.breadcrumbs-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('/images/breadcrumbs.svg');
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
 .catalog-inner {
   padding-top: 25px;
   background-color: #F0F0F0;
@@ -1735,6 +1759,37 @@ main {
   z-index: 1;
 }
 
+.button-filter::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 220px;
+  height: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background: #FFE17F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.button-filter:focus{
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.button-filter:hover::before{
+  height: 40px;
+}
+
+.button-filter:active::before{
+  background: #FFCC33;
+}
+
+.button-filter:disabled {
+  opacity: 0.3;
+}
+
 .select-control {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -1744,11 +1799,46 @@ main {
   width: 160px;
 }
 
+.select-control:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .catalog-inner-sorting {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 0 40px;
+}
+
+.sort-up-button {
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.sort-up-icon {
+  opacity: 0.2;
+}
+
+.sort-up-button:nth-child(2) .sort-up-icon {
+  transform: rotate(180deg);
+}
+
+.sort-up-button:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.sort-up-button:hover .sort-up-icon {
+  opacity: 0.5;
+
+}
+
+.sort-up-button:active .sort-up-icon {
+  opacity: 1;
 }
 
 .catalog-inner-wrapper {
@@ -1774,6 +1864,27 @@ main {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.catalog-inner-card-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.catalog-inner-card-link:hover .button-inner-card-more {
+  display: block;
+}
+
+.catalog-inner-card-link:hover .catalog-inner-card-img img, .catalog-inner-card-link:hover .catalog-inner-card-descr {
+  opacity: 0.6;
+}
+
+.catalog-inner-card-link:active .catalog-inner-card-img img, .catalog-inner-card-link:active .catalog-inner-card-descr {
+  opacity: 0.3;
+}
+
+.catalog-inner-card-link:active .button-inner-card-more::before {
+  background: #FFC700;
 }
 
 .catalog-inner-card-img {
@@ -1803,6 +1914,19 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  cursor: pointer;
+}
+
+.button-inner-card-more::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  background: #FFE17F;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .catalog-inner-card-descr {
@@ -1830,6 +1954,19 @@ main {
   border: 3px solid #E5E5E5;
   margin-bottom: 44px;
   cursor: pointer;
+}
+
+.download-more:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.download-more:hover {
+  border: 3px solid #000000;
+}
+
+.download-more:active {
+  opacity: 0.3;
 }
 
 .pagination-list {
@@ -1870,10 +2007,47 @@ main {
   cursor: pointer;
 }
 
+.pagination-button-prev:focus, .pagination-button-next:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.pagination-button-prev:hover, .pagination-button-next:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination-button-prev:active, .pagination-button-next:active {
+  opacity: 0.3;
+}
+
+.pagination-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.pagination-button:hover {
+  color: #444444;
+}
+
+.pagination-button:active {
+  opacity: 0.1;
+}
+
+.pagination-button:visited {
+  opacity: 0.3;
+}
+
 .pagination-number-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+
+.pagination-number-list .pagination-item {
+  margin-right: 2px;
+}
+
+.pagination-number-list .pagination-item:last-child {
+  margin-right: 0;
 }
