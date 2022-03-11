@@ -53,7 +53,37 @@
                   <svg class="menu-user-icon menu-user-icon-cart" aria-hidden="true" focusable="false" width="16" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" f/>
                   </svg>
-                  Корзина</a>
+                  Корзина
+                </a>
+                <div class="popover popover-close">
+                  <div class="popover-content">
+                    <ul class="popover-list">
+                      <li class="popover-item">
+                        <a class="popover-link" href="#">
+                          <img class="popover-img" src="images/products/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                          <div class="popover-descr">
+                            Любительская селфи-палка
+                          </div>
+                        </a>
+                        <button class="popover-close-button"></button>
+                      </li>
+                      <li class="popover-item">
+                        <a class="popover-link" href="#">
+                          <img class="popover-img" src="images/products/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                          <div class="popover-descr">
+                            Профессиональная селфи-палка
+                          </div>
+                        </a>
+                        <button class="popover-close-button"></button>
+                      </li>
+                    </ul>
+                    <div class="popover-result">
+                      <div class="popover-descr popover-descr-product">Товаров: <span class="popover-amount">2</span></div>
+                      <div class="popover-descr popover-descr-sum">Сумма: <span class="popover-price">2000</span> ₽</div>
+                    </div>
+                    <button class="open-cart-button">Открыть корзину</button>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -96,13 +126,13 @@
           </div>
           <ul class="menu-list">
             <li class="menu-item">
-              <a class="menu-link" href="#delivery">Доставка</a>
+              <a class="menu-link menu-link-current" href="index.html#service">Доставка</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="#guarantee">Гарантия</a>
+              <a class="menu-link menu-link-current" href="index.html#service">Гарантия</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="#contacts">Контакты</a>
+              <a class="menu-link menu-link-current" href="index.html#service">Контакты</a>
             </li>
           </ul>
         </div>
@@ -133,40 +163,85 @@
             <h2 class="catalog-inner-filter-title">фильтр:</h2>
             <fieldset class="catalog-inner-filter-group">
               <legend class="catalog-inner-filter-subtitle">Стоимость</legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 119px;">
+                    <button class="range-toggle range-toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                      <label class="range-label range-label-min">от
+                        <input class="range-input" type="number" value="0">
+                      </label>
+                    </button>
+                    <button class="range-toggle range-toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                      <div class="range-label-wrapper">
+                        <label class="range-label range-label-max">до
+                          <input class="range-input" type="number" value="5000">
+                        </label>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="catalog-inner-filter-group">
               <legend class="catalog-inner-filter-subtitle">Цвет</legend>
-              <label class="catalog-inner-filter-choiсe">
-                <input class=catalog-inner-input" type="checkbox" name="black" checked>
-            Черный
-              </label>
-              <label class="catalog-inner-filter-choiсe">
-                <input class=catalog-inner-input"  type="checkbox" name="white" checked>
-              Белый
-              </label>
-              <label class="catalog-inner-filter-choiсe">
-                <input class=catalog-inner-input"  type="checkbox" name="blue">
-              Синий
-              </label>
-              <label class="catalog-inner-filter-choiсe">
-                <input class=catalog-inner-input"  type="checkbox" name="red">
-              Красный
-              </label>
-              <label class="catalog-inner-filter-choiсe">
-                <input class=catalog-inner-input"  type="checkbox" name="pink">
-              Розовый
-              </label>
+              <ul class="catalog-inner-filter-list">
+                <li class="catalog-inner-filter-item">
+                  <label class="catalog-inner-filter-choiсe">
+                    <input class="visually-hidden catalog-inner-input" type="checkbox" name="black" checked>
+                    <span class="control-mark"></span>
+                    <span class="catalog-inner-filter-label">Черный</span>
+                  </label>
+                </li>
+                <li class="catalog-inner-filter-item">
+                  <label class="catalog-inner-filter-choiсe">
+                    <input class="visually-hidden catalog-inner-input"  type="checkbox" name="white" checked>
+                    <span class="control-mark"></span>
+                    <span class="catalog-inner-filter-label">Белый</span>
+                  </label>
+                </li>
+                <li class="catalog-inner-filter-item">
+                  <label class="catalog-inner-filter-choiсe">
+                    <input class="visually-hidden catalog-inner-input"  type="checkbox" name="blue">
+                    <span class="control-mark"></span>
+                    <span class="catalog-inner-filter-label">Синий</span>
+                  </label>
+                </li>
+                <li class="catalog-inner-filter-item">
+                  <label class="catalog-inner-filter-choiсe">
+                    <input class="visually-hidden catalog-inner-input"  type="checkbox" name="red">
+                    <span class="control-mark"></span>
+                    <span class="catalog-inner-filter-label">Красный</span>
+                  </label>
+                </li>
+                <li class="catalog-inner-filter-item">
+                  <label class="catalog-inner-filter-choiсe">
+                    <input class="visually-hidden catalog-inner-input"  type="checkbox" name="pink">
+                    <span class="control-mark"></span>
+                    <span class="catalog-inner-filter-label">Розовый</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="catalog-inner-filter-group">
               <legend class="catalog-inner-filter-subtitle">Bluetooth</legend>
-              <label class="catalog-inner-filter-choiсe">
-                <input class=catalog-inner-input"  type="radio" name="yes" checked>
-              Есть
-              </label>
-              <label class="catalog-inner-filter-choiсe">
-                <input class=catalog-inner-input"  type="radio" name="no">
-              Нет
-              </label>
+              <ul class="catalog-inner-filter-list">
+                <li class="catalog-inner-filter-item">
+                  <label class="catalog-inner-filter-choiсe">
+                    <input class="visually-hidden catalog-inner-input"  type="radio" name="yes" checked>
+                    <span class="control-mark control-mark-circle"></span>
+                    <span class="catalog-inner-filter-label">Есть</span>
+                  </label>
+                </li>
+                <li class="catalog-inner-filter-item">
+                  <label class="catalog-inner-filter-choiсe">
+                    <input class="visually-hidden catalog-inner-input"  type="radio" name="no">
+                    <span class="control-mark control-mark-circle"></span>
+                    <span class="catalog-inner-filter-label">Нет</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <button class="button button-filter" type="submit">Показать</button>
           </form>
@@ -209,6 +284,7 @@
                   <a class="catalog-inner-card-link" href="#">
                     <div class="catalog-inner-card-img">
                       <img src="images/products/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                      <span class="catalog-inner-card-img-new catalog-inner-card-img-new-close">NEW</span>
                       <button class="button-inner-card-more">Подробнее</button>
                     </div>
                     <div class="catalog-inner-card-descr">
@@ -222,6 +298,7 @@
                   <a class="catalog-inner-card-link" href="#" >
                     <div class="catalog-inner-card-img">
                       <img src="images/products/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+                      <span class="catalog-inner-card-img-new catalog-inner-card-img-new-close">NEW</span>
                       <button class="button-inner-card-more">Подробнее</button>
                     </div>
                     <div class="catalog-inner-card-descr">
@@ -235,6 +312,7 @@
                     <div class="catalog-inner-card-img">
                       <img src="images/products/product-3.jpg" width="360" height="380" alt="Непотопляемая
                     селфи-палка">
+                      <span class="catalog-inner-card-img-new catalog-inner-card-img-new-close">NEW</span>
                       <button class="button-inner-card-more">Подробнее</button>
                     </div>
                     <div class="catalog-inner-card-descr">
@@ -248,6 +326,7 @@
                   <a class="catalog-inner-card-link" href="#">
                     <div class="catalog-inner-card-img">
                       <img src="images/products/product-4.jpg" width="360" height="380" alt="Селфи-палка">
+                      <span class="catalog-inner-card-img-new catalog-inner-card-img-new-close">NEW</span>
                       <button class="button-inner-card-more">Подробнее</button>
                     </div>
                     <div class="catalog-inner-card-descr">
