@@ -602,7 +602,7 @@ main {
   right: 0;
   top: 211px;
   cursor: pointer;
-  background: url('images/arrow.svg') no-repeat center center;
+  background: url('../images/arrow.svg') no-repeat center center;
   border: none;
 }
 
@@ -970,17 +970,17 @@ main {
 }
 
 .service-wrapper-item-delivery {
-  background: url('images/services/delivery.svg') no-repeat right top;
+  background: url('../images/services/delivery.svg') no-repeat right top;
   background-size: contain;
 }
 
 .service-wrapper-item-guarantee {
-  background: url('images/services/guarantee.svg') no-repeat right top;
+  background: url('../images/services/guarantee.svg') no-repeat right top;
   background-size: contain;
 }
 
 .service-wrapper-item-credit {
-  background: url('images/services/credit.svg') no-repeat right top;
+  background: url('../images/services/credit.svg') no-repeat right top;
   background-size: contain;
 }
 
@@ -1053,7 +1053,7 @@ main {
   content: "";
   position: absolute;
   left: 39px;
-  background: url('images/services/truck.svg') no-repeat center center;
+  background: url('../images/services/truck.svg') no-repeat center center;
   width: 47px;
   height: 31px;
 }
@@ -1330,7 +1330,7 @@ main {
 .mailing-form p {
   margin: 0;
   padding-left: 32px;
-  background: url('images/check.svg') no-repeat left center;
+  background: url('../images/check.svg') no-repeat left center;
   background-size: 16px 16px;
 }
 
@@ -1658,7 +1658,7 @@ main {
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url('images/breadcrumbs.svg');
+  background-image: url('../images/breadcrumbs.svg');
 }
 
 .breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
