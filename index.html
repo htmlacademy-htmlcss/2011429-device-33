@@ -181,7 +181,7 @@
                     </svg>
                     Корзина
                   </a>
-                  <div class="popover popover-close">
+                  <div class="popover popover-cart popover-close">
                     <div class="popover-content">
                       <ul class="popover-list">
                         <li class="popover-item">
@@ -191,7 +191,9 @@
                               Любительская селфи-палка
                             </div>
                           </a>
-                          <button class="popover-close-button"></button>
+                          <button class="popover-close-button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
                         </li>
                         <li class="popover-item">
                           <a class="popover-link" href="#">
@@ -200,15 +202,32 @@
                               Профессиональная селфи-палка
                             </div>
                           </a>
-                          <button class="popover-close-button"></button>
-                        </li>
+                          <button class="popover-close-button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                        </li>                      
                       </ul>
-                      <div class="popover-result">
-                        <div class="popover-descr popover-descr-product">Товаров: <span class="popover-amount">2</span></div>
-                        <div class="popover-descr popover-descr-sum">Сумма: <span class="popover-price">2000</span> ₽</div>
-                      </div>
-                      <button class="open-cart-button">Открыть корзину</button>
-                    </div>
+                      <ul class="popover-result-list">
+                        <li class="popover-result-item popover-result-item-product">
+                          <div class="popver-descr popover-result-descr">
+                            Товаров:
+                          </div>
+                          <div class="popover-amount">
+                            2
+                          </div>
+                        </li>
+                        <li class="popover-result-item popover-result-item-sum">
+                          <div class="popver-descr popover-result-descr">
+                            Сумма: 
+                          </div>
+                          <div class="popover-price">
+                            2000 
+                            <span class="currency">₽</span>
+                          </div>
+                        </li>                      
+                      </ul>
+                      <button class="open-cart-button">Открыть корзину</button>  
+                    </div>                                      
                   </div>
                 </li>
               </ul>              
