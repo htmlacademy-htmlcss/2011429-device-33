@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Девайс</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -13,122 +14,7 @@
           <a class="header-top-link" href="index.html">
             <img class="header-top-img" src="images/logo/logo.svg" width="145" height="36" alt="Логотип">
           </a>
-        </div>
-        <!-- <div class="header-middle">
-          <div class="menu-search-log">
-            <form class="menu-form" action="https://echo.htmlacademy.ru/" method="get">
-              <svg class="menu-icon" aria-hidden="true" focusable="false" width="16" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m15.7 14.69-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"/>
-              </svg>
-              <input class="menu-form-input" type="search" name="search" placeholder="Текст поиска">
-              <button class="button-search" type="submit"> Найти </button>
-            </form>
-            <div class="account">
-              <button class="button-login">
-                <svg class="button-icon" aria-hidden="true" focusable="false" width="13" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 1.99 3 3.89c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" />
-                </svg>
-                Войти</button>
-              <a class="account-name-link" href="#">
-                <svg class="button-icon" aria-hidden="true" focusable="false" width="13" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 1.99 3 3.89c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" />
-                </svg>
-                  Коля Петухов
-              </a>
-              <button class="button-logout">Выйти</button>
-            </div>
-          </div>
-          <ul class="menu-user-list">
-            <li class="menu-user-item">
-              <a class="menu-user-link" href="#">
-                <svg class="menu-user-icon" aria-hidden="true" focusable="false" width="10" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 .39H4v12h2v-12Zm-4 4H0v8h2v-8Zm8-1H8v9h2v-9Z" />
-                </svg>
-                Сравнить</a>
-            </li>
-            <li class="menu-user-item">
-              <a class="menu-user-link menu-user-link-cart" href="#">
-                <svg class="menu-user-icon menu-user-icon-cart" aria-hidden="true" focusable="false" width="16" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" f/>
-                </svg>
-                Корзина
-              </a>
-              <div class="popover popover-close">
-                <div class="popover-content">
-                  <ul class="popover-list">
-                    <li class="popover-item">
-                      <a class="popover-link" href="#">
-                        <img class="popover-img" src="images/products/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
-                        <div class="popover-descr">
-                          Любительская селфи-палка
-                        </div>
-                      </a>
-                      <button class="popover-close-button"></button>
-                    </li>
-                    <li class="popover-item">
-                      <a class="popover-link" href="#">
-                        <img class="popover-img" src="images/products/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
-                        <div class="popover-descr">
-                          Профессиональная селфи-палка
-                        </div>
-                      </a>
-                      <button class="popover-close-button"></button>
-                    </li>
-                  </ul>
-                  <div class="popover-result">
-                    <div class="popover-descr popover-descr-product">Товаров: <span class="popover-amount">2</span></div>
-                    <div class="popover-descr popover-descr-sum">Сумма: <span class="popover-price">2000</span> ₽</div>
-                  </div>
-                  <button class="open-cart-button">Открыть корзину</button>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="header-bottom">
-          <div class="menu-nav">
-            <a class="menu-button" href="#">
-              <span>Каталог товаров</span>
-              <button class="button-dropdown">
-                <span class="visually-hidden">Раскрывающийся список товаров</span>
-              </button>
-            </a>
-            <nav class="navigation navigation-active">
-              <h2 class="visually-hidden">Каталог товаров</h2>
-              <ul class="navigation-list">
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">Квадрокоптеры</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="catalog.html">Моноподы для cелфи</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">Умные часы</a>
-                </li>
-                <li class="navigation-item navigation-item-1">
-                  <a class="navigation-link" href="#">Экшн-камеры</a>
-                </li>       
-              </ul>
-            </nav>
-          </div>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a class="menu-link menu-link-current" href="#service">Доставка</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link menu-link-current" href="#service">Гарантия</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link menu-link-current" href="#service">Контакты</a>
-            </li>
-          </ul>
-        </div> -->
+        </div>        
       </div>
       <nav class="container">
         <h2 class="visually-hidden">Навигационное меню</h2>
