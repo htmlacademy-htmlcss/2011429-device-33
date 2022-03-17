@@ -372,17 +372,18 @@ body {
 }
 
 .popover {
+  padding-top: 6px;
   position: absolute;
   width: 320px;
-  right: -60px;
-  background-color: #000000;
+  right: -77px;
+  background: url('../images/form/tooltip-triangle.svg') no-repeat top center, linear-gradient(transparent 6px , #000000 6px);
   color: #ffffff;
   z-index: 2;
 }
 
-.popover-close {
+/* .popover-close {
   display: none;
-}
+} */
 
 .popover-list {
   margin: 0;
