@@ -1290,10 +1290,10 @@ body {
   z-index: 1;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
 }
- */
+
 .modal-order {
   box-sizing: border-box;
   margin: 0 auto;
