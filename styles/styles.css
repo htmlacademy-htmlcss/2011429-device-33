@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "Raleway";
   font-style: normal;
@@ -65,6 +72,11 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .main-container {
@@ -545,6 +557,7 @@ body {
 }
 
 .open-cart-button {
+  display: block;
   box-sizing: border-box;
   margin: 0 20px;
   margin-bottom: 20px;
@@ -558,6 +571,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: #ffffff;
   color: #000000;
   cursor: pointer;
@@ -2447,7 +2461,8 @@ address {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -2602,7 +2617,8 @@ address {
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   width: 40px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -2879,36 +2895,37 @@ address {
   margin-bottom: 44px;
 }
 
-.catalog-inner-card-link {
+.catalog-inner-card {
+  position: relative;
   display: block;
   color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
 
-.catalog-inner-card-link:focus {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
-.catalog-inner-card-link:hover .button-inner-card-more {
+.catalog-inner-card:hover .button-inner-card-more {
   display: block;
 }
 
-.catalog-inner-card-link:hover .catalog-inner-card-img img,
-.catalog-inner-card-link:hover .catalog-inner-card-descr,
-.catalog-inner-card-link:hover .catalog-inner-card-img-new {
+.catalog-inner-card:hover .catalog-inner-card-img img,
+.catalog-inner-card:hover .catalog-inner-card-descr,
+.catalog-inner-card:hover .catalog-inner-card-img-new {
   opacity: 0.6;
 }
 
-.catalog-inner-card-link:active .catalog-inner-card-img img,
-.catalog-inner-card-link:active .catalog-inner-card-descr,
-.catalog-inner-card-link:active .catalog-inner-card-img-new {
+.catalog-inner-card:active .catalog-inner-card-img img,
+.catalog-inner-card:active .catalog-inner-card-descr,
+.catalog-inner-card:active .catalog-inner-card-img-new {
   opacity: 0.3;
 }
 
-.catalog-inner-card-link:active .button-inner-card-more::before {
+.catalog-inner-card:active .button-inner-card-more::before {
   background: #ffc700;
+}
+
+.catalog-inner-card:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .catalog-inner-card-img {
@@ -2950,7 +2967,8 @@ address {
 
 .button-inner-card-more {
   position: absolute;
-  min-width: 220px;
+  width: 220px;
+  padding: 10px 5px;
   display: none;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -2958,6 +2976,7 @@ address {
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
+  text-decoration: none;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
