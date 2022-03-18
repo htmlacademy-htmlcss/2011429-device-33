@@ -116,6 +116,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline; 
 } 
 
@@ -158,12 +159,6 @@ body {
 .menu-form-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-
-/* .menu-form-input:focus { 
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
-  z-index: 1;
-} */
 
 .menu-form-input:focus {
   outline: none;
@@ -248,7 +243,8 @@ body {
   flex-wrap: wrap;
   width: 231px;
 }
-.account-list a, .account-list .button-logout {
+
+.account-item a, .account-item .button-logout,  .account-item .button-login {
   display: none;
 }
 
@@ -257,8 +253,8 @@ body {
 }
 
 .logged .button-login {
-  display: none;
-}
+  display: flex;
+} 
 
 .button-login, .button-logout {
   margin: 0;
@@ -744,10 +740,11 @@ body {
 .navigation-item-wrapper {
   margin: 0;
   padding: 0;
+  margin-right: -5px;
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  width: 480px;
+  width: 475px;
   flex-wrap: wrap;
 }
 
@@ -758,22 +755,20 @@ body {
 .submenu-navigation-list {   
   box-sizing: border-box;
   position: absolute;
-  margin: 0;
-  padding: 0;
+  margin: 0;  
+  margin-left: -60px;
+  margin-top: 2px;
+  padding: 12px 0 57px 60px;
   list-style: none;
   background-color: #FFE17F;
   width: 1160px;
-  padding-left: 60px;
-  margin-left: -60px;
-  margin-top: 14px;
-  padding-bottom: 57px;
   display: grid;
   grid-template-columns: 252px 211px 211px;
   grid-row-gap: 20px;
   z-index: 2;  
 }
 
-  .submenu-navigation-list-close {
+.submenu-navigation-list-close {
   display: none;
 } 
 
@@ -787,6 +782,7 @@ body {
 }
 
 .submenu-navigation-link {
+  position: relative;
   display: block;
   font-size: 16px;
   line-height: 18px;
@@ -894,7 +890,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   color: #FFFFFF;
-  width: 250px;
+  width: 500px;
   height: 135px;
   text-align: right;
 }
@@ -1005,6 +1001,10 @@ body {
   cursor: pointer;
 }
 
+.slider-pagination-button:focus {
+  outline: none;
+}
+
 .slider-pagination-button:focus::after {
   content: "";
   position: absolute;
@@ -1034,6 +1034,7 @@ body {
 
 .slider-specifications-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style:  none;
@@ -2139,6 +2140,7 @@ address {
   color: #ffffff;
   width: 239px;
   margin-right: 112px;
+  margin-bottom: 17px;
 }
 
 .footer-phone {
@@ -2180,6 +2182,8 @@ address {
 
 .footer-menu-item {
   margin-right: 35px;
+  margin-bottom: 35px;
+
 }
 
 .footer-menu-item:nth-child(3n), .footer-menu-item:last-child {
@@ -2300,6 +2304,7 @@ address {
 }
 
 .made-in a {
+  display: block;
   text-decoration: none;
   color: #FFC700;
 }
@@ -2417,8 +2422,7 @@ address {
   margin: 0;
   padding: 0;
   border: none;
-  padding-top: 12px;/* 
-  margin-bottom: 68px; */
+  padding-top: 12px;
   line-height: 19px;
   width: 200px;
 }
@@ -2444,11 +2448,13 @@ address {
   width: 100%;
   padding: 0;
   padding-top: 12px;
+  font-family: 'Rubik';
+  font-weight: 700;
   font-size: 18px;
+  letter-spacing: -0.02em;
   line-height: 20px;
   color: #000000;
   border-top: 2px solid #000000;
-  letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
@@ -2494,21 +2500,24 @@ address {
 .range-toggle:focus::after {
   content: "";
   position: absolute;
-  top: -3px;
-  left: -3px; 
-  width: 20px;
-  height: 20px;
+  top: -2px;
+  left: -2px; 
+  width: 18px;
+  height: 18px;
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
-.range-toggle:hover {
-  opacity: 0.5;
-  background-color: #EBEBEB;
+.range-toggle:focus {
+  outline: none;
 }
 
-.range-toggle:active {
+.range-toggle:hover {  
+  border: 2px solid rgba(0, 0, 0, 0.5);
   
+}
+
+.range-toggle:active {  
   background-color: #000000;
 }
 
@@ -2525,20 +2534,21 @@ address {
 .range-wrapper-inputs {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: -15px;
+  width: calc(100% + 40px);
 }
 
 .range-label {
   display: flex;
   align-items: baseline;
-  margin-right: 5px;
   font-family: Rubik;
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
   min-height: 18px;
-  width: 30px;
   overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.3);
 }
 
  .range-label-min {
@@ -2549,10 +2559,13 @@ address {
   margin-top: 13px;  
 }  
 
+.range-label-level {
+  margin-right: 5px;
+}
+
 .range-input {
   position: relative;
   margin: 0;
-  padding: 0 4px;
   border: none;
   background-color: transparent;
   font-family: Rubik;
@@ -2560,6 +2573,12 @@ address {
   font-size: 15px;
   line-height: 18px;
   appearance: textfield;
+  width: 40px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.range-input-min {
+  width: 18px;
 }
 
 .range-label:focus-within {
@@ -2747,7 +2766,7 @@ address {
 }
 
 .catalog-inner-sorting-title {
-  width: 150px;
+  width: 147px;
   display: block;
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -2931,6 +2950,7 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;  
+  flex-wrap: wrap;
 }
 
 .catalog-inner-card-subtitle {
@@ -2956,7 +2976,7 @@ address {
 
 .download-more {
   margin: 0 auto;
-  padding: 0;
+  padding: 18px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -2964,7 +2984,7 @@ address {
   color: #000000;
   text-transform: uppercase;
   width: 760px;
-  height: 55px;
+  min-height: 55px;
   border: 3px solid #E5E5E5;
   margin-bottom: 44px;
   cursor: pointer;  
@@ -3002,6 +3022,7 @@ address {
 }
 
 .pagination-button {
+  position: relative;
   width: 100%;  
   display: block;
   margin: 0;
@@ -3033,6 +3054,8 @@ address {
 
 .pagination-button-prev:focus, .pagination-button-next:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  z-index: 1;
 }
 
 .pagination-button-prev:hover, .pagination-button-next:hover {
@@ -3045,7 +3068,8 @@ address {
 
 .pagination-button:focus {
   outline: 2px solid #AF4FFF;
-  z-index: 1;
+  outline-offset: 2px;
+  z-index: 1;  
 }
 
 .pagination-button:hover {
@@ -3074,5 +3098,6 @@ address {
 .pagination-number-item {
   min-width: 40px;
   min-height: 40px;
+
 } 
 

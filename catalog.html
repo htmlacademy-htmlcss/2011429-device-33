@@ -41,15 +41,15 @@
                     </svg>
                     Войти</button>
                 </li>
-                <li class="account-item">
-                  <a class="account-link" href="#">
+                <li class="account-item logged">
+                  <a class="account-link" href="#" >
                     <svg class="button-icon" aria-hidden="true" focusable="false" width="13" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S3 1.99 3 3.89c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" />
                     </svg>
                       Коля Петухов
                   </a>
                 </li>
-                <li class="account-item">
+                <li class="account-item logged" >
                   <button class="button-logout">Выйти</button>
                 </li>
               </ul>
@@ -206,10 +206,12 @@
                       <span class="visually-hidden">Изменить максимальную цену</span>                      
                     </button>
                     <div class="range-wrapper-inputs">
-                      <label class="range-label range-label-min">от
-                        <input class="range-input" type="number" value="0" name="min-price">                        
+                      <label class="range-label range-label-min">
+                        <span class="range-label-level">от</span> 
+                        <input class="range-input range-input-min" type="number" value="0" name="min-price">                        
                       </label>
-                      <label class="range-label range-label-max">до
+                      <label class="range-label range-label-max">
+                        <span class="range-label-level">до</span>                         
                         <input class="range-input" type="number" value="5000" name="max-price">
                       </label> 
                     </div>
@@ -425,7 +427,7 @@
           <ul class="footer-menu-list">
             <li class="footer-menu-item"><a class="footer-menu-link" href="#delivery">Доставка</a></li>
             <li class="footer-menu-item"><a class="footer-menu-link" href="#delivery">Гарантия</a></li>
-            <li class="footer-menu-item"><a class="footer-menu-link" href="#delivery">Кредит</a></li>
+            <li class="footer-menu-item"><a class="footer-menu-link" href="#delivery">Контакты</a></li>
         </ul>
           <div class="phone">
             <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
