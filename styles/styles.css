@@ -2103,13 +2103,21 @@ address {
   background: #dcdcdc;
 }
 
-.form-email input:invalid {
-  border-color: #ff3d3d;
-}
-
 .form-email input:disabled + .button-mail {
   opacity: 0.3;
 }
+
+.form-email input:required:default {
+  border-color: #c4c4c4;
+}
+
+.form-email input:active:invalid {
+  border-color: #ff3d3d;
+} 
+
+.form-email input:focus:invalid {
+  border-color: #ff3d3d;
+} 
 
 .button-mail {
   box-sizing: border-box;
@@ -2674,10 +2682,6 @@ address {
   opacity: 0.1;
 }
 
-.catalog-inner-input:disabled {
-  opacity: 0.1;
-}
-
 .control-mark {
   position: absolute;
   box-sizing: border-box;
@@ -2732,7 +2736,6 @@ address {
   border-radius: 50%;
 }
 
-
 .catalog-inner-input[type="radio"]:checked + .control-mark-circle {
   border: 2px solid #000000;
 }
@@ -2746,6 +2749,10 @@ address {
   height: 20px;
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.catalog-inner-input:disabled {
+  opacity: 0.1;
 }
 
 .catalog-inner-filter-label {
