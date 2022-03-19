@@ -1261,45 +1261,31 @@ img {
   background: transparent;
 }
 
-.service-item:focus .button-service {
-  color: #ffe17f;
-}
-
-.service-item:focus .button-service::after {
-  background: transparent;
-}
-
-.service-item:hover {
-  background-color: #000000;
-}
-
-.service-item:focus-within {
+.button-service:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
-.button-service:focus {
-  outline: none;
+.button-service:hover::after {
+  height: 100%;
 }
 
-.service-item:hover .button-service {
+.button-service:active::after {
+  background-color: #ffcc33;
+}
+
+.button-service-current:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-service-current:hover {
   color: rgba(255, 225, 127, 0.5);
 }
 
-.service-item:hover .button-service::after {
-  background: transparent;
-}
-
-.service-item:active {
+.button-service-current:active {
   background-color: #000000;
-}
-
-.service-item:active .button-service {
   color: rgba(255, 225, 127, 0.3);
-}
-
-.service-item:active .button-service::after {
-  background: transparent;
 }
 
 .service-wrapper {
@@ -1556,8 +1542,7 @@ img {
   outline-offset: 2px;
 }
 
-.form-input:focus:invalid + .form-message,
-.form-input:active:invalid + .form-message {
+.form-input:invalid + .form-message {
   color: #ff3d3d;
 }
 
@@ -1565,12 +1550,7 @@ img {
   background-color: #dcdcdc;
 }
 
-.form-input:required:default {
-  border: none;
-}
-
-.form-input:active:invalid,
-.form-input:focus:invalid {
+.form-input:invalid {
   outline: 2px solid #ff3d3d;
 }
 
@@ -2144,15 +2124,7 @@ address {
   opacity: 0.3;
 }
 
-.form-email input:required:default {
-  border-color: #c4c4c4;
-}
-
-.form-email input:active:invalid {
-  border-color: #ff3d3d;
-}
-
-.form-email input:focus:invalid {
+.form-email input:invalid {
   border-color: #ff3d3d;
 }
 
