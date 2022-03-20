@@ -1334,7 +1334,7 @@ img {
 
 .service-wrapper-item-delivery .service-item-subtitle,
 .service-wrapper-item-delivery .service-item-descr {
-  width: 452px;
+  width: 454px;
 }
 
 .order {
@@ -1542,16 +1542,23 @@ img {
   outline-offset: 2px;
 }
 
-.form-input:invalid + .form-message {
-  color: #ff3d3d;
-}
-
 .form-input:hover {
   background-color: #dcdcdc;
 }
 
-.form-input:invalid {
+.form-input:active:invalid,
+.form-input:focus:invalid {
   outline: 2px solid #ff3d3d;
+}
+
+.form-input:active:invalid + .form-message,
+.form-input:focus:invalid + .form-message {
+  color: #ff3d3d;
+}
+
+.form-input:required:default {
+  border: none;
+  color: #000000;
 }
 
 .form-input:disabled {
@@ -1566,6 +1573,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  color: #000000;
 }
 
 .order-form-mail:invalid .form-error-message {
@@ -2124,7 +2132,12 @@ address {
   opacity: 0.3;
 }
 
-.form-email input:invalid {
+.form-email input:required:default {
+  border-color: #c4c4c4;
+}
+
+.form-email input:active:invalid,
+.form-email input:focus:invalid {
   border-color: #ff3d3d;
 }
 
